@@ -1,5 +1,5 @@
 const expressFileUpload = require("express-fileupload");
-const { ProfileUserGetController, ProfileCategoryPostController,AddProductPostController } = require("../controllers/ProfileController");
+const { ProfileUserGetController } = require("../controllers/ProfileController");
 const AuthMiddleware = require("../middlewares/AuthMiddleware");
 const { ProductDetail, UserDetailGetController, UserExitController } = require("../controllers/HomeRouteController"); 
 
@@ -11,7 +11,7 @@ const productFileUpload = expressFileUpload({
 
 
 router.get("/profile", AuthMiddleware, ProfileUserGetController)  
-router.get("/user/:id", UserDetailGetController)
+router.get("/:id", UserDetailGetController)
 router.get("/exit", UserExitController)
 
 module.exports = {

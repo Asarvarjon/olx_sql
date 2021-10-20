@@ -90,3 +90,103 @@
        ok: false,
        message: "Error",
     }
+
+    
+
+
+
+
+## USER DETAIL GET CONTROLLER
+
+### REQUEST (GET)
+
+#### Endpoint
+ 
+     /user/:id
+
+#### Headers
+
+
+```json
+    { 
+        "Content-Type":"application/json",
+        "Accept":"application/json",
+    }
+```
+
+### Response
+
+#### Success
+
+    // code = 200
+
+    {
+       ok: true,
+       message: "OK",
+       data: {
+           user,
+           productUser
+       }
+    }
+
+#### Fail
+
+    // code = 
+
+    {
+       ok: false,
+       message: "Error",
+    }
+
+
+
+
+
+## USER PROFILE GET CONTROLLER
+
+### REQUEST (GET)
+
+#### Endpoint
+ 
+     /user/profile
+
+#### Headers
+
+
+```json
+    { 
+        "Content-Type":"application/json",
+        "Accept":"application/json",
+        "Authorization": TOKEN
+    }
+```
+
+### Response
+
+#### Success
+
+    // code = 200
+
+    {
+       ok: true,
+       message: "OK",
+       data: {
+           user,
+           productCategory
+       }
+    }
+
+#### Fail
+
+    // code = 
+
+    {
+       ok: false,
+       message: "Error",
+    }
+
+
+
+
+
+ 

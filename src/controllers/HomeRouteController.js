@@ -40,18 +40,14 @@
    static async UserDetailGetController(req, res) {
 
      let productUser = await req.client.query(`SELECT * FROM products WHERE user_id = ${req.params.id} JOIN users ON user_id = ${req.params.id} JOIN categories ON products.category_id =  category_id;`)
-
-
-     let ads = await req.client.query(`SELECT * FROM products WHERE user_id = req.params.id;`)
-
+  
 
      res.status(200).json({
        ok: true,
        message: "OK",
        data: {
          user: req.user,
-         productUser: productUser.rows,
-         ads: ads.rows
+         productUser: productUser.rows, 
        }
      })
 

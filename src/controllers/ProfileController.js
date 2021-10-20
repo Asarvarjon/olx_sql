@@ -5,8 +5,7 @@ const path = require("path")
 module.exports = class ProfileController { 
   static async ProfileUserGetController(req, res) {
 	try { 
-		const productCategory = await req.client.query(`SELECT * FROM categories;`)
-    console.log(req.user); 
+		const productCategory = await req.client.query(`SELECT * FROM categories;`) 
 	
 		res.status(200).json({
 			ok:true,
