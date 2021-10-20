@@ -1,16 +1,15 @@
  module.exports = class HomeRouteController {
    static async HomeGetController(req, res) {
      try {
-       const list = await req.client.query(`SELECT * FROM categories;`);
+       const categoryList = await req.client.query(`SELECT * FROM categories;`);
        const productsList = await req.client.query('SELECT * FROM products JOIN users ON products.user_id = users.user_id;');
-
-       console.log(productsList);
+ 
        res.status(200).json({
          ok: true,
          message: "OK",
          data: {
            user: req.user,
-           list: list.rows,
+           list: categoryList.rows,
            productsList: productsList.rows
          }
        })

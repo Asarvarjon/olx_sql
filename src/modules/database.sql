@@ -11,7 +11,7 @@ CREATE TABLE products (
     product_name VARCHAR(32) NOT NULL,
     price VARCHAR(32) NOT NULL,   
     phone VARCHAR(13) NOT NULL,
-    photos VARCHAR(32) NOT NULL,
+    photos VARCHAR(32)[] NOT NULL,
     content TEXT NOT NULL,
     category_id UUID NOT NULL REFERENCES categories(category_id),
     user_id UUID NOT NULL REFERENCES users(user_id)

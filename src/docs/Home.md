@@ -28,6 +28,10 @@
     {
        ok: true,
        message: "OK"
+       data: {
+           categoryList,
+           productsList
+       }
     }
 
 #### Fail

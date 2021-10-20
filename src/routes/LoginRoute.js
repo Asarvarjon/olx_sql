@@ -8,6 +8,6 @@ router.get("/login", LoginGetController);
 router.post("/login", LoginPostController)
 
 module.exports = {
-    path: "/",
+    path: "/user",
     router,
 }

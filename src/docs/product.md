@@ -1,12 +1,12 @@
 # Product ROUTE DOCUMENTATION
 
-## Product ROUTE  GET REQUEST
+## Product Details GET REQUEST
 
 ### REQUEST (GET)
 
 #### Endpoint
  
-     /product
+     /product/details: id
 
 #### Headers
 
@@ -29,8 +29,9 @@
        ok: true,
        message: "OK",
        data: {
-           user,
-           productCategory
+            user, 
+            detail, 
+            adsOwner, 
        }
     }
 
