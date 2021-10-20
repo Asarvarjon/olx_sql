@@ -15,6 +15,7 @@
     { 
         "Content-Type":"application/json",
         "Accept":"application/json", 
+        "Authorization": TOKEN
     }
 ```
 
@@ -59,6 +60,7 @@
     { 
         "Content-Type":"application/json",
         "Accept":"application/json",
+        "Authorization": TOKEN,
         "body": {
             "name": "category name", 
             "photo": "photo"
@@ -104,6 +106,7 @@
     { 
         "Content-Type":"application/json",
         "Accept":"application/json",
+        "Authorization": TOKEN,
         "body": {
             "name": "product name", 
             "content": "product desc", 
