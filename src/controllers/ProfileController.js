@@ -17,6 +17,7 @@ module.exports = class ProfileController {
 		})
 	} catch (error) {
 		console.log(error);
+    next(error)
 	}
   }
 
@@ -38,6 +39,7 @@ module.exports = class ProfileController {
           })
       } catch (error) {
         console.log(error);
+        next(error)
       }
   }
 
@@ -45,7 +47,7 @@ module.exports = class ProfileController {
   static async AddProductPostController(req, res) {
     try {
         const {name, content, phone, category, price} = req.body;  
-        console.log(req.user);
+         
         //  let photos = []; 
 
         //  if(Array.isArray(req.files.file)) { 
