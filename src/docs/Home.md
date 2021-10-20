@@ -2,11 +2,11 @@
 
 ## HOME ROUTE GET REQUEST
 
-### REQUEST
+### REQUEST (GET)
 
 #### Endpoint
-
-   GET /
+ 
+   /
 
 #### Headers
 
