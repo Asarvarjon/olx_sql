@@ -11,3 +11,7 @@
 - [Users (GET) || "/user"](src/docs/Users.md)
 
 
+## 3. Products
+
+- [Products (GET) || "/product"](src/docs/product.md)
+

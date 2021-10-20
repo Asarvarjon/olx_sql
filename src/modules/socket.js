@@ -1,8 +1,6 @@
-const sessions = require("../models/SessionsModel")
+ 
 const { checkToken } = require("./jwt");
-const { MessagesValidation } = require("./validations");
-const { isValidObjectId } = require("mongoose");
-const messages = require("../models/MessagesModel");
+const { MessagesValidation } = require("./validations");  
 
 
 module.exports = function socket(io){
